@@ -17,9 +17,11 @@
       @media (max-width: 980px) {
           body { padding-top: 0 }
       }   
-    </style>
+    </style>    
     
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
   </head>
   
