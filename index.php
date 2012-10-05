@@ -56,6 +56,23 @@ $detect = new Mobile_Detect();
       </div>
     </div>
     <div class="container">
+        <div class="row">
+            <div class="span12 columns">
+                <p class="well">
+                    <?php if ($detect->isMobile() && !$detect->isTablet() && !$detect->isiOS() && !$detect->isAndroidOS()): ?>
+                        Koukáte přes mobil, starý křáp nebo šedivou myš.
+                    <?php elseif ($detect->isMobile() && !$detect->isTablet() && $detect->isiOS()): ?>
+                        Koukáte přes iPhone.
+                    <?php elseif ($detect->isMobile() && !$detect->isTablet() && $detect->isAndroidOS()): ?>
+                        Koukáte přes Android mobil.
+                    <?php elseif ($detect->isTablet()): ?>
+                        Koukáte přes tablet.
+                    <?php else: ?>
+                        Koukáte přes desktop nebo něco většího.
+                    <?php endif; ?>                    
+                </p>                
+            </div>
+        </div>        
       <div class="row">
         <div class="span4">
           <div>
