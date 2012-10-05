@@ -13,8 +13,10 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     
     <style>
-      body { padding-top: 60px; /* 60px to make the container go all the way
-      to the bottom of the topbar */ }
+      body { padding-top: 60px; }
+      @media (max-width: 980px) {
+          body { padding-top: 0 }
+      }   
     </style>
     
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
@@ -49,24 +51,12 @@
       </div>
     </div>
     <div class="container">
-      <div class="hero-unit">
-        <div>
-          <h1>
-            Ahoj!
-          </h1>
-          <p>
-            Sleduji OVM, abych se ujistil, že lidé, o kterých si myslím, že jsou ministři,
-            jsou ještě ministři. Nenechám si ujít ani zasvěcené diskuze zajímavých
-            hostů a odborníků v Historii.cs.
-          </p>
-        </div>
-        <a class="btn btn-primary" href="#">
-          Learn more »
-        </a>
-      </div>
       <div class="row">
         <div class="span4">
           <div>
+            <p class="image">
+                <img src="bootstrap/img/img_fb943c9fcf_big.jpeg" width="1024" height="765" alt="" />
+            </p>
             <h2>
               Letiště JFK, de Gaulla - a teď i Václava Havla
             </h2>
@@ -80,6 +70,9 @@
         </div>
         <div class="span4">
           <div>
+              <p class="image">
+                  <img src="bootstrap/img/img_1068291961_big.jpeg" width="640" height="426" alt="" />
+              </p>              
             <h2>
               Dobrodružství vědy a techniky
             </h2>
@@ -95,6 +88,9 @@
         </div>
         <div class="span4">
           <div>
+              <p class="image">
+                  <img src="bootstrap/img/img_6985007958_big.jpeg" width="800" height="508" alt="" />
+              </p>              
             <h2>
               Cesta do lesa
             </h2>
@@ -112,10 +108,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="span12">
+        <div class="span8">
           <h3>
             Obsah co není vidět na mobilech
           </h3>
+          <p class="image">
+            <img src="bootstrap/img/img_77c7b095b4_big.jpeg" width="1600" height="1067" alt="" />
+          </p>
           <div>
             Sleduji OVM, abych se ujistil, že lidé, o kterých si myslím, že jsou ministři,
             jsou ještě ministři. Nenechám si ujít ani zasvěcené diskuze zajímavých
@@ -131,11 +130,9 @@
             81, titul plané zabručel.
             <br>
           </div>
-          <div>
-            <br>
-          </div>
-          <h3>
-          </h3>
+        </div>
+        <div class="span4">
+            
         </div>
       </div>
       <hr>
