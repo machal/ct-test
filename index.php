@@ -1,3 +1,4 @@
+<?php require_once('categorizr.php') ?>
 <!DOCTYPE html>
 <html lang="cs">
   
@@ -18,8 +19,6 @@
           body { padding-top: 0 }
       }   
     </style>    
-    
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     
     <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
 
@@ -109,6 +108,9 @@
           </a>
         </div>
       </div>
+      
+<?php // Obsah viditelny jen mimo mobily
+    if (isTablet() or isDesktop() or isTV()): ?>      
       <div class="row">
         <div class="span8">
           <h3>
@@ -137,6 +139,7 @@
             
         </div>
       </div>
+<?php endif; ?>            
       <hr>
       <div>
         © Company 2012
