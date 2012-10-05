@@ -1,4 +1,8 @@
-<?php require_once('categorizr.php') ?>
+<?php
+include 'Mobile_Detect.php';
+$detect = new Mobile_Detect();
+?>
+
 <!DOCTYPE html>
 <html lang="cs">
   
@@ -110,7 +114,7 @@
       </div>
       
 <?php // Obsah viditelny jen mimo mobily
-    if (isTablet() or isDesktop() or isTV()): ?>      
+    if (!($detect->isMobile() && !$detect->isTablet())): ?>
       <div class="row">
         <div class="span8">
           <h3>
