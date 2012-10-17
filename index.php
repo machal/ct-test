@@ -32,23 +32,18 @@ $detect = new Mobile_Detect();
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">
-            Project name
+          <a class="brand" href="index.php">
+            ČT test
           </a>
           <ul class="nav">
             <li>
-              <a href="#">
-                Home
+              <a href="index.php">
+                Adaptive Images
               </a>
             </li>
             <li>
-              <a href="#">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Contact
+              <a href="response-js.php">
+                Response JS
               </a>
             </li>
           </ul>
@@ -166,7 +161,7 @@ $detect = new Mobile_Detect();
         © Company 2012
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
     </script>
   </body>
 
