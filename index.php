@@ -57,9 +57,9 @@ $detect = new Mobile_Detect();
                     <?php if ($detect->isMobile() && !$detect->isTablet() && !$detect->isiOS() && !$detect->isAndroidOS()): ?>
                         Koukáte přes mobil, starý křáp nebo šedivou myš.
                     <?php elseif ($detect->isMobile() && !$detect->isTablet() && $detect->isiOS()): ?>
-                        Koukáte přes iPhone.
+                        Koukáte přes iPhone. Verze <?php echo $detect->version('iPhone'); ?>.
                     <?php elseif ($detect->isMobile() && !$detect->isTablet() && $detect->isAndroidOS()): ?>
-                        Koukáte přes Android mobil.
+                        Koukáte přes Android mobil. Verze  <?php echo $detect->version('Android'); ?>
                     <?php elseif ($detect->isTablet()): ?>
                         Koukáte přes tablet.
                     <?php else: ?>
